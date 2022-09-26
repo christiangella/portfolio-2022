@@ -1,2 +1,288 @@
-/* GENERAL PARAMETERS */
+/* VARIABLE SWATCHES */
 
+:root {
+    --liberationGold: #d89515;
+        /* liberationGold: main color */
+    --freedomBrown: #393734;
+        /* freedomBrown: contrast/dark color */
+    --shimmeringLight: #e4c137;
+        /* shimmeringLight: accent color */
+    --hummingGray: #ececec;
+        /* hummingGray: background color */
+  }
+
+/* GENERAL PARAMETERS*/
+
+  * {
+    font-family: Proxima Nova, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  ::selection {
+    background-color: var(--shimmeringLight);
+    color: var(--hummingGray);
+  }
+
+/* SECTION: HEADER */
+
+header {
+    padding:25px;
+    background-color: #000;
+    color: var(--liberationGold);
+    max-height: 100px;
+    border-bottom: 10px solid #20201f;
+}
+
+header h1 {
+    font-size: 90px;
+    font-family: rough-love, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    transform: rotate(-2deg);
+    position: relative;
+    top: -27px;
+}
+
+@media screen and (max-width: 992px) {
+    header h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+/* SECTION: NAVIGATION BAR */
+
+nav {
+    background-color: var(--freedomBrown);
+    padding: 30px 0px 40px;
+    color: var(--shimmeringLight);
+    text-align: right;
+}
+
+nav p {
+    float: right;
+    display: flex;
+    padding-right: 100px;
+}
+
+nav a {
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+nav a:link {
+    color: var(--liberationGold);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--shimmeringLight);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:visited {
+    color: var(--liberationGold);
+}
+
+nav a:visited:hover {
+    color: var(--shimmeringLight);
+}
+
+
+/* SECTION: BANNER IMAGE */
+
+  .banner {
+    height: 700px;
+    max-width: 100%;
+    background-image: url("portfolio_header.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECTION: ABOUT PAGE */
+
+article {
+    width: 100%;
+    margin: auto;
+}
+
+article img {
+    border-radius: 50%;
+    width: 150px;
+    display:inline-block;
+}
+
+.sectionAbout {
+    margin: 0 0 15px;
+    padding: 50px 100px 20px 100px;
+    height: 275px;
+    background-color: var(--hummingGray);
+}
+
+.leftfloat {
+    float: left;
+    margin-right: 45px;
+}
+
+article h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+article p {
+    text-align: justify;
+    line-height: 19px;
+    max-width: 75%;
+    font-size: 13px;
+}
+
+/* SECTION: PORTFOLIO & FLEXBOXES */
+
+#portfolio {
+    padding-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+main h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.halfcard {
+    flex: 0 0 1;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    width: 45%;
+    margin-bottom: 20px;
+}
+  
+.halfcard img {
+    width: 75%;
+    min-width: 200px;
+}
+
+.fullcard {
+    flex: 1 0 1;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    width: 80%;
+}
+
+.fullcard img {
+    width: 100%;
+    min-width: 200px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .card {
+      width: 50%;
+    }
+
+    .halfcard img {
+        width: 55%;
+        min-width: 200px;
+    }
+
+    .fullcard img {
+        width: 57%;
+        min-width: 200px;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    
+    .halfcard {
+        width: 100%;
+    }
+
+    .fullcard {
+        width: 75%;
+    }
+
+    .halfcard img {
+        width: 55%;
+        min-width: 200px;
+    }
+
+    .fullcard img {
+        width: 75%;
+        min-width: 200px;
+    }
+  }
+
+/* SECTION: FOOTER */
+
+footer {
+    background-color: var(--freedomBrown);
+    padding: 30px 0px 30px;
+    color: var(--liberationGold);
+    text-align: center;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: -2px;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer p a{
+    text-transform: lowercase;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+footer p a:link {
+    color: var(--liberationGold);
+}
+
+footer p a:hover {
+    color: var(--shimmeringLight);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer p a:visited {
+    color: var(--liberationGold);
+}
+
+footer p a:visited:hover {
+    color: var(--shimmeringLight);
+}
