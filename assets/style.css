@@ -113,25 +113,27 @@ nav a:visited:hover {
 
 article {
     width: 100%;
-    margin: auto;
+    display: flex;
+    background-color: var(--hummingGray);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 article img {
     border-radius: 50%;
     width: 150px;
     display:inline-block;
+    float: right;
 }
 
-.sectionAbout {
-    margin: 0 0 15px;
-    padding: 50px 100px 20px 100px;
-    height: 275px;
-    background-color: var(--hummingGray);
+article aside {
+    flex: 50%;
+    padding: 10px;
 }
 
-.leftfloat {
-    float: left;
-    margin-right: 45px;
+article section {
+    flex: 50%;
+    padding: 10px;
 }
 
 article h2 {
@@ -222,7 +224,7 @@ main h3 {
 }
   
 @media screen and (max-width: 768px) {
-    
+
     .halfcard {
         width: 100%;
     }
