@@ -6,7 +6,7 @@ This repository was built from the ground-up for the UC Davis Full Stacks Coding
 
 ## Features
 
-The website includes the following features:
+The repository includes the following features:
 
 * Semantic elements, including: header, navigation links ("nav"), article, main, and footer.
 * Use of alt text on images for accessibility.
@@ -16,11 +16,11 @@ The website includes the following features:
 * CSS variables to store and alter data depending on user story and vision.
 * Responsive CSS design, such as text anchors that respond and interact with user.
 
-![Screenshot image of the deployed webpage, showing the header and banner image.](assets/portfolio_screenshot_001)
+![Screenshot image of the deployed webpage, showing the header and banner image.](assets/portfolio_screenshot_001.png)
 
-![Screenshot image of the deployed webpage, showing the about biography and portfolio content.](assets/images/screenshot-02.png)
+![Screenshot image of the deployed webpage, showing the about biography and portfolio content.](assets/portfolio_screenshot_002.png)
 
-![Screenshot image of the deployed webpage, showing the bottom of the portfolio content and the footer.](assets/images/screenshot-03.png)
+![Screenshot image of the deployed webpage, showing the bottom of the portfolio content and the footer.](assets/portfolio_screenshot_003.png)
 
 ## Installation
 
@@ -29,7 +29,7 @@ Clone a copy of the repository by going to the repo code and selecting Code. In 
 HTTPS: `https://github.com/christiangella/portfolio-2022.git`
 SSH: `git@github.com:christiangella/portfolio-2022.git`
 
-![Screenshot image of GitHub showing the layout of cloning. From the Code button, SSH keys is selected.](assets/images/screenshot-04.png)
+![Screenshot image of GitHub showing the layout of cloning. From the Code button, SSH keys is selected.](assets/portfolio_screenshot_004.png)
 
 ## Deployment
 
@@ -45,7 +45,10 @@ The website could expand to incorporate the following features:
 * Reformat images for higher resolution.
 * Adjust aesthetic presentation of header, h1, and footer.
 * Incorporate CSS animations and JavaScript, including hiding the links bar to `display:none` until activated by a point.
+* Further expand use of variables to store colors for general accessibility and streamlining code.
 
 ## Credits
 
-This program was developed for the UC Davis Fullstacks Bootcamp under the UC Davis Continuing and Professional Education.
+This repository was developed for the UC Davis Fullstacks Bootcamp under the UC Davis Continuing and Professional Education.
+
+All images were designed by Manong Chris.
