@@ -127,12 +127,12 @@ article img {
 }
 
 article aside {
-    flex: 50%;
+    flex: 30%;
     padding: 10px;
 }
 
 article section {
-    flex: 50%;
+    flex: 60%;
     padding: 10px;
 }
 
